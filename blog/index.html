@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - TechBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">TechBlog</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Article Section -->
+        <section class="article-section">
+            
+            <article class="article-container">
+                <div id="loading" class="loading">Loading article...</div>
+                <div id="error" class="error" style="display: none;">
+                    <h2>Article Not Found</h2>
+                    <p>The article you're looking for doesn't exist or has been removed.</p>
+                </div>
+                
+                <div id="article-content" style="display: none;">
+                    <!-- <header class="article-header"> -->
+                        <h1 class="article-title" id="article-title"></h1>
+                        <div class="article-meta">
+                            <span class="tag" id="article-tag"></span>
+                            <span id="article-date"></span>
+                        </div>
+                    <!-- </header> -->
+                    
+                    <div class="article-content" id="article-body"></div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Recent Posts -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Recent Posts</h3>
+                <ul id="recent-posts" class="recent-posts"></ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Categories</h3>
+                <div class="tags">
+                    <a href="#" class="tag" data-filter="JavaScript">JavaScript</a>
+                    <a href="#" class="tag" data-filter="CSS">CSS</a>
+                    <a href="#" class="tag" data-filter="React">React</a>
+                    <a href="#" class="tag" data-filter="Node.js">Node.js</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 TechBlog. All rights reserved. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="../generateBlog.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

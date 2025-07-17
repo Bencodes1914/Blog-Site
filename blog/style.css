@@ -1,0 +1,152 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Variable Font;
+    src: url(../font/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    font-family: Variable Font;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-widget {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 5px;
+}
+
+.widget-title {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.recent-posts {
+    list-style: none;
+}
+
+.recent-posts li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.recent-posts li:last-child {
+    border-bottom: none;
+}
+
+.recent-posts a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recent-posts a:hover {
+    color: #667eea;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: #f8f9fa;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.tag:hover {
+    background: #667eea;
+    color: white;
+}
+
+.article-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
