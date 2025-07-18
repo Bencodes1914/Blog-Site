@@ -231,7 +231,7 @@ async function fetchData() {
            {
     id: 2,
     title: "Why HTML Semantics Matter.",
-    preview: "Semantic HTML improves accessibility, SEO, and code clarity. Learn why using proper tags like <header>, <main>, and <article> matters for both users and developers.",
+    preview: "Semantic HTML improves accessibility, SEO, and code clarity. Learn why using proper tags like header, main, and article matters for both users and developers.",
     content: `
         <div class="content-section">
             <h2 class="section-title">Introduction to Semantic HTML</h2>
