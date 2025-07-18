@@ -150,3 +150,31 @@ footer {
 a{
     text-decoration: none;
 }
+
+.section-content {
+  margin-top: 0.5rem;
+  padding-left: 1rem;      /* Controls the indentation */
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Indent paragraph text inside content-section */
+.section-content p {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Indent code blocks consistently */
+.section-content .code-block {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  background-color: #272822;
+  color: #f8f8f2;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95rem;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre;
+}
